@@ -1,6 +1,6 @@
 require_relative 'items'
 
-item = Item.new('21-6-2016')
+item = Item.new('21-6-2010')
 
 p item.can_be_archived?
 
