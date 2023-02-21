@@ -138,6 +138,13 @@ Run ruby main.rb or rspec
 - GitHub: [@githubhandle](https://github.com/187jjay187)
 - Twitter: [@twitterhandle](https://twitter.com/187jjay187)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/jerome-osman-137605a4)
+
+👤 Lukman Abdulkarim
+
+GitHub: @lukman155
+Twitter: @lukmanabdulka18
+LinkedIn: lukman-abdulkarim
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
