@@ -1,8 +1,10 @@
-require_relative 'items'
-
+require_relative '../Ruby-Capstone/class/book_methods'
 class App
+  attr_accessor :book_list, :author_list
+
   def initialize
-    @books = []
+    @book_list = []
+    @author_list = []
     @music_album = []
     @games = []
     @movies = []
@@ -67,5 +69,17 @@ class App
     loop do
       chose_option
     end
+  end
+
+  def book_display
+    list_books
+  end
+
+  def author_display
+    list_authors
+  end
+
+  def book_create
+    create_book
   end
 end
