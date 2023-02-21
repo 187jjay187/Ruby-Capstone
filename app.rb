@@ -8,7 +8,6 @@ class App
     @movies = []
   end
 
-
    # rubocop:disable all
   def chose_option
     answer = gets.chomp
