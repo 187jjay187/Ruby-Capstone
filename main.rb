@@ -1,7 +1,11 @@
-require_relative 'items'
+require'./app'
 
-item = Item.new('21-6-2010')
+def main
+ app = App.new
+ app.run
+end
 
-# p item.can_be_archived?
+main
 
-# p item.move_to_archive
+
+
