@@ -1,8 +1,11 @@
 require './app'
+require_relative './class/display_menu'
 
 def main
   app = App.new
-  app.run
+  loop do
+    display_menu(app)
+  end
 end
 
 main
