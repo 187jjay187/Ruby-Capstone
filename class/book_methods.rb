@@ -5,7 +5,7 @@ def list_books
     puts 'Book list is empty'
   else
     @book_list.each_with_index do |book, index|
-       puts "(#{index}) ID: #{book.id} Publisher: \"#{book.publisher}\", Cover State: \"#{book.cover_state}\" Publish Date: #{book.publish_date} Archived: #{book.archived}" # rubocop:disable Layout/LineLength
+      puts "(#{index}) ID: #{book.id} Publisher: \"#{book.publisher}\", Cover State: \"#{book.cover_state}\" Publish Date: #{book.publish_date} Archived: #{book.archived}" # rubocop:disable Layout/LineLength
     end
   end
 end
