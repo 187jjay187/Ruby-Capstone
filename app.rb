@@ -1,9 +1,9 @@
-require_relative 'items'
+require './class/add_music'
 
 class App
   def initialize
     @books = []
-    @music_album = []
+    @music_album = CreatMusicAlbum.new
     @games = []
     @movies = []
   end
@@ -17,15 +17,15 @@ class App
     when '1'
       puts 'List all books'
     when '2'
-      puts 'List all music album'
+      @music_album.list_all_music
     when '3'
-      puts 'List all movie'
+      put 'something'
     when '4'
       puts 'List of games'
     when '5'
-      puts 'List all genre'
+      @music_album.list_all_genre
     when '6'
-      puts 'List all lables'
+      puts 'something'
     when '7'
       puts 'List all authors'
     when '8'
@@ -33,9 +33,9 @@ class App
     when '9'
       puts 'Add a book'
     when '10'
-      puts 'Add a music album'
+      @music_album.creat_album
     when '11'
-      puts 'Add a moive'
+      puts 'Add a movie'
     when '12'
       puts 'Add a game'
     else
