@@ -37,7 +37,7 @@ class App
   def source_display
     @movies.list_all_sources
   end
-  
+
   def music_display
     @music_album.list_all_music
   end
