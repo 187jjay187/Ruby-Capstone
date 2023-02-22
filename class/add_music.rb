@@ -18,12 +18,14 @@ class CreatMusicAlbum
    album = MusicAlbum.new(on_spotify,public_date)
   end
   @music_albums << album
+  puts "#{album.public_date}"
   puts "You added your musci album to the list."
  end
 
  def list_all_music
   puts "It is empty" if @music_albums.empty?
-  @music_albums.each_with_index { |album,index| puts "#{index}, It is on spotify: #{album} "}
+  puts "#{@music_albums}"
+  @music_albums.each_with_index { |album,index| puts "#{index}, It is on spotify: #{album.on_spotify}"}
  end
 
 end
