@@ -9,9 +9,9 @@ class CreatMusicAlbum
     @music_albums = []
     @genres = []
     @album_store = DataStore.new('music_album')
-    @music_albums = @album_store.read_file.map{ |album| MusicAlbum.new(album['on_spotify'], album['public_date'])}
+    @music_albums = @album_store.read_file.map { |album| MusicAlbum.new(album['on_spotify'], album['public_date']) }
     @genre_store = DataStore.new('genre')
-    @genres = @genre_store.read_file.map{ |genre| Genre.new(genre['name'])}  
+    @genres = @genre_store.read_file.map { |genre| Genre.new(genre['name']) }
   end
 
   def creat_album
@@ -55,12 +55,12 @@ class CreatMusicAlbum
 
   # save the data method
 
-  def save 
-   music_album = @music_albums.map(&:create_json)
-   write_data = JSON.pretty_generate(music_album)
-   File.write('music_album.json',write_data)
-   genre = @genres.map(&:create_json)
-   genre_data = JSON.pretty_generate(genre)
-   File.write('genre.json',genre_data)
+  def save
+    music_album = @music_albums.map(&:create_json)
+    write_data = JSON.pretty_generate(music_album)
+    File.write('music_album.json', write_data)
+    genre = @genres.map(&:create_json)
+    genre_data = JSON.pretty_generate(genre)
+    File.write('genre.json', genre_data)
   end
 end

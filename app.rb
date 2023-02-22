@@ -69,5 +69,4 @@ class App
       chose_option
     end
   end
-
 end

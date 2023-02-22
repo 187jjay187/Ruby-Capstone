@@ -12,10 +12,10 @@ class MusicAlbum < Item
   end
 
   def create_json
-   {
-    on_spotify: @on_spotify,
-    public_date: @public_date
-   }
+    {
+      on_spotify: @on_spotify,
+      public_date: @public_date
+    }
   end
 
   private
