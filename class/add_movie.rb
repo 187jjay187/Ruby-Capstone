@@ -41,5 +41,3 @@ class CreateMovies
     end
   end
 end
-
-
