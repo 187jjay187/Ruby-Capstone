@@ -1,25 +1,25 @@
 require_relative '../class/music'
 
-describe MusicAlbum do 
- context 'Testing for the music class ' do 
-  it "Should test the attribute of the music class" do 
-   music = MusicAlbum.new(true,'02/04/2001')
-   expect(music.on_spotify).to eq true
-   expect(music.public_date).to eq '02/04/2001'
-  end
+describe MusicAlbum do
+  context 'Testing for the music class ' do
+    it 'Should test the attribute of the music class' do
+      music = MusicAlbum.new(true, '02/04/2001')
+      expect(music.on_spotify).to eq true
+      expect(music.public_date).to eq '02/04/2001'
+    end
 
-  it "Should test the attribute of the music class" do 
-   music = MusicAlbum.new(false,'05/19/2001')
-   expect(music.on_spotify).to eq false
-   expect(music.public_date).to eq '05/19/2001'
+    it 'Should test the attribute of the music class' do
+      music = MusicAlbum.new(false, '05/19/2001')
+      expect(music.on_spotify).to eq false
+      expect(music.public_date).to eq '05/19/2001'
+    end
   end
- end
 end
 
 
 describe 'Unit Tests for Music Class' do
   before :each do
-    @music = MusicAlbum.new(true,'02/05/2001')
+    @music = MusicAlbum.new(true, '02/05/2001')
   end
 
   context 'initialize object' do
