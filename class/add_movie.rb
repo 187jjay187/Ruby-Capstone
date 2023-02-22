@@ -30,13 +30,16 @@ class CreateMovies
   def list_all_movies
     puts 'No movies added yet' if @movies_list.empty?
     @movies_list.each_with_index do |movie, index|
-      puts "Movie ID:#{index} - Silent Movie:#{movie.silent}, Publish Date: #{movie.publish_date}"
+      puts "#{index} - Movie ID:#{movie.id} Silent Movie:#{movie.silent}, Publish Date: #{movie.publish_date}"
     end
   end
 
-  def list_all_genre
+  def list_all_sources
     puts 'No sources added yet' if @sources.empty?
     @sources.each_with_index do |source, index|
-      puts "Source ID:#{index} - "
+      puts "#{index} - Source ID:#{movie.id} Source: #{source.name} "
+    end
+  end
+end
 
 
