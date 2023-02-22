@@ -1,6 +1,5 @@
 require_relative './class/book_methods'
 
-
 def read_book(file)
   puts ''
   puts '*********************       BOOKS      *********************'
