@@ -16,7 +16,6 @@ describe MusicAlbum do
   end
 end
 
-
 describe 'Unit Tests for Music Class' do
   before :each do
     @music = MusicAlbum.new(true, '02/05/2001')
