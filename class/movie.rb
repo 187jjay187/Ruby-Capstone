@@ -8,7 +8,6 @@ class Movie < Item
     super(publish_date)
     @publish_date = publish_date
     @silent = silent
-    items = []
   end
 
   def to_str
