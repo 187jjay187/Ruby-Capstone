@@ -1,11 +1,9 @@
 require './class/add_music'
-require './class/add_genre'
 
 class App
   def initialize
     @books = []
     @music_album = CreatMusicAlbum.new
-    @genres = AddGenre.new
     @games = []
     @movies = []
   end
@@ -19,15 +17,15 @@ class App
     when '1'
       puts 'List all books'
     when '2'
-      puts 'List all music album'
-    when '3'
       @music_album.list_all_music
+    when '3'
+      put 'something'
     when '4'
       puts 'List of games'
     when '5'
-      puts 'List all genre'
+      @music_album.list_all_genre
     when '6'
-      @genres.list_all_genre
+      puts 'something'
     when '7'
       puts 'List all authors'
     when '8'
@@ -37,7 +35,7 @@ class App
     when '10'
       @music_album.creat_album
     when '11'
-      @genres.add_genre
+      puts 'Add a movie'
     when '12'
       puts 'Add a game'
     else
