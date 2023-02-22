@@ -11,8 +11,11 @@ class MusicAlbum < Item
     @items = []
   end
 
-  def to_s
-    puts "On_spotify #{@on_spotify}, public_date #{@public_date}"
+  def create_json
+   {
+    on_spotify: @on_spotify,
+    public_date: @public_date
+   }
   end
 
   private
