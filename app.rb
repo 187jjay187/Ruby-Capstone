@@ -23,7 +23,7 @@ class App
   def book_create
     create_book
   end
- 
+
   def music_display
     @music_album.list_all_music
   end

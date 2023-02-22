@@ -40,7 +40,6 @@ class CreatMusicAlbum
     end
   end
 
-
   def list_all_genre
     puts 'There is no genre' if @genres.empty?
     @genres.each_with_index { |genre, index| puts "#{index}, Genre ID: #{genre.id}, Your music genre: #{genre.name}" }
