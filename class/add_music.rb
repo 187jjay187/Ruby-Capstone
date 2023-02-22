@@ -1,11 +1,17 @@
 require_relative 'items'
 require_relative 'music'
 require_relative 'genre'
+require_relative 'data_store'
+require 'json'
 
 class CreatMusicAlbum
   def initialize
     @music_albums = []
     @genres = []
+    @album_store = DataStore.new('music_album')
+    @music_albums = @album_store.read_file.map { |album| MusicAlbum.new(album['on_spotify'], album['public_date']) }
+    @genre_store = DataStore.new('genre')
+    @genres = @genre_store.read_file.map { |genre| Genre.new(genre['name']) }
   end
 
   def creat_album
@@ -30,7 +36,7 @@ class CreatMusicAlbum
   def list_all_music
     puts 'It is empty' if @music_albums.empty?
     @music_albums.each_with_index do |album, index|
-      puts "#{index},Music ID: It is on spotify: #{album.on_spotify} , Public Date: #{album.public_date}"
+      puts "#{index},Music ID: #{album.id} It is on spotify: #{album.on_spotify} , Public Date: #{album.public_date}"
     end
   end
 
@@ -45,5 +51,16 @@ class CreatMusicAlbum
   def list_all_genre
     puts 'There is no genre' if @genres.empty?
     @genres.each_with_index { |genre, index| puts "#{index}, Genre ID: #{genre.id}, Your music genre: #{genre.name}" }
+  end
+
+  # save the data method
+
+  def save
+    music_album = @music_albums.map(&:create_json)
+    write_data = JSON.pretty_generate(music_album)
+    File.write('music_album.json', write_data)
+    genre = @genres.map(&:create_json)
+    genre_data = JSON.pretty_generate(genre)
+    File.write('genre.json', genre_data)
   end
 end
