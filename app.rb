@@ -13,6 +13,7 @@ class App
     answer = gets.chomp
     case answer
     when '0'
+      @music_album.save
       exit 0
     when '1'
       puts 'List all books'
