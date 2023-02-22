@@ -1,11 +1,11 @@
-require_relative 'items'
+require './class/add_movie'
 
 class App
   def initialize
     @books = []
     @music_album = []
     @games = []
-    @movies = []
+    @movies = CreateMovies.new
   end
 
    # rubocop:disable all
@@ -19,7 +19,7 @@ class App
     when '2'
       puts 'List all music album'
     when '3'
-      puts 'List all movie'
+      @movies.list_all_movies
     when '4'
       puts 'List of games'
     when '5'
@@ -29,13 +29,13 @@ class App
     when '7'
       puts 'List all authors'
     when '8'
-      puts 'List all sourse'
+      @movies.list_all_sources
     when '9'
       puts 'Add a book'
     when '10'
       puts 'Add a music album'
     when '11'
-      puts 'Add a moive'
+      @movies.add_movie
     when '12'
       puts 'Add a game'
     else
