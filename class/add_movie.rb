@@ -15,7 +15,7 @@ class CreateMovies
     src = gets.chomp
     source = Source.new(src)
     @sources << source
-    puts 'Is your movie silent? [y/n]:'
+    puts 'Is it a silent movie? [y/n]:'
     silent = gets.chomp.downcase
     case silent
     when 'y'
@@ -30,14 +30,14 @@ class CreateMovies
   def list_all_movies
     puts 'No movies added yet' if @movies_list.empty?
     @movies_list.each_with_index do |movie, index|
-      puts "#{index} - Movie ID:#{movie.id} Silent Movie:#{movie.silent}, Publish Date: #{movie.publish_date}"
+      puts "#{index} - Movie_ID: #{movie.id}, Silent_Movie: #{movie.silent}, Publish_Date: #{movie.publish_date}"
     end
   end
 
   def list_all_sources
     puts 'No sources added yet' if @sources.empty?
     @sources.each_with_index do |source, index|
-      puts "#{index} - Source ID:#{movie.id} Source: #{source.name} "
+      puts "#{index} - Source_ID: #{source.id} Source: #{source.name} "
     end
   end
 end
