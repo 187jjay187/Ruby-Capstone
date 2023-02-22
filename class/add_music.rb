@@ -40,13 +40,6 @@ class CreatMusicAlbum
     end
   end
 
-  def add_genre
-    puts 'Can you tell me your music genre?[eg : pop,rock]'
-    genre_type = gets.chomp
-    genre = Genre.new(genre_type)
-    @genres << genre
-    puts 'You added the music genre'
-  end
 
   def list_all_genre
     puts 'There is no genre' if @genres.empty?
