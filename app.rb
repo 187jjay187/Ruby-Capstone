@@ -1,8 +1,5 @@
-
 require_relative '../Ruby-Capstone/class/book_methods'
 require_relative '../Ruby-Capstone/class/display_menu'
-require './class/add_music'
-
 class App
   attr_accessor :book_list, :author_list
 
@@ -14,6 +11,9 @@ class App
     @movies = []
   end
 
+  def book_display
+    list_books
+  end
 
   def author_display
     list_authors
