@@ -1,8 +1,9 @@
 require_relative '../Ruby-Capstone/class/add_movie'
 require_relative '../Ruby-Capstone/class/book_methods'
 require_relative '../Ruby-Capstone/class/display_menu'
-require_relative '../Ruby-Capstone/class/add_music'
+require_relative '../Ruby-Capstone/class/music_methods'
 require_relative '../Ruby-Capstone/file_reader'
+require 'json'
 
 class App
   attr_accessor :book_list, :author_list, :music_album, :movies
@@ -13,6 +14,7 @@ class App
     @music_album = []
     @games = []
     @movies = []
+    @genres = []
   end
 
   def book_display
@@ -40,15 +42,15 @@ class App
   end
 
   def music_display
-    @music_album.list_all_music
+    list_all_music
   end
 
   def music_create
-    @music_album.creat_album
+    creat_album
   end
 
   def genre_display
-    @music_album.list_all_genre
+    list_all_genre
   end
 
   def save_files
@@ -71,7 +73,7 @@ class App
         case file_name
         when 'book'
           read_book(ary)
-        when 'music'
+        when 'music_album'
           read_music(ary)
         when 'game'
           read_game(ary)
@@ -94,7 +96,7 @@ class App
           read_author(ary)
         when 'label'
           read_label(ary)
-        when 'genre'
+        when 'genres'
           read_genre(ary)
         end
       else
