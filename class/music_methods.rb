@@ -33,12 +33,12 @@ def list_all_genre
   @genres.each_with_index { |genre, index| puts "#{index}, Genre ID: #{genre.id}, Your music genre: #{genre.name}" }
 end
 
-def add_music(on_spotify,publish_date)
- music = MusicAlbum.new(on_spotify,publish_date)
- @music_album << music
+def add_music(on_spotify, publish_date)
+  music = MusicAlbum.new(on_spotify, publish_date)
+  @music_album << music
 end
 
 def add_genre(name)
- genre = Genre.new(name)
- @genres << genre 
+  genre = Genre.new(name)
+  @genres << genre
 end
