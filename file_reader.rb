@@ -2,7 +2,6 @@ require_relative './class/book_methods'
 require_relative './class/add_movie'
 require_relative './class/music_methods'
 
-
 def read_book(file)
   puts ''
   puts '*********************       BOOKS      *********************'
