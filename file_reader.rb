@@ -1,4 +1,5 @@
 require_relative './class/book_methods'
+require_relative './class/add_movie'
 
 def read_book(file)
   puts ''
@@ -23,5 +24,19 @@ def read_author(file)
     author_first = el['value']['first_name']
     author_last = el['value']['last_name']
     puts "Author First Name: #{author_first} Author Last Name: #{author_last}"
+  end
+end
+
+def read_movies(file)
+  puts ''
+  puts '*********************       MOVIE      *********************'
+  puts ''
+  file.each do |el|
+    movie_id = el['value']['id']
+    movie_archived = el['value']['archive']
+    silent_movie = el['value']['silent']
+    movie_publish_date = el['value']['publish_date']
+    puts "ID: #{movie_id} Silent movie: #{silent_movie}  Published on: #{movie_publish_date} Archived: #{movie_archived}" # rubocop:disable Layout/LineLength
+    read_movie(silent_movie, movie_publish_date)
   end
 end
