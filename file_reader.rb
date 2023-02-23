@@ -66,3 +66,14 @@ def read_genre(file)
     add_genre(genre_name)
   end
 end
+
+def read_label(file)
+  puts ''
+  puts '*********************      LABELS      *********************'
+  puts ''
+  file.each do |el|
+    label_title = el['value']['title']
+    label_color = el['value']['color']
+    puts "Label Title: #{label_title} Label Color: #{label_color}"
+  end
+end
