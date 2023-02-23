@@ -1,7 +1,6 @@
 require_relative './book'
 require_relative '../app'
 require_relative 'movie'
-require_relative './add_music'
 require_relative '../exit_app'
 
 # main entry point where the user can choise operations
