@@ -40,8 +40,9 @@ def read_movies(file)
     movie_publish_date = el['value']['publish_date']
     puts "ID: #{movie_id} Silent movie: #{silent_movie}  Published on: #{movie_publish_date} Archived: #{movie_archived}" # rubocop:disable Layout/LineLength
     read_movie(silent_movie, movie_publish_date)
+  end
 end
- 
+
 def read_music(file)
   puts ''
   puts '*********************   MUSIC ALBUMS   *********************'
