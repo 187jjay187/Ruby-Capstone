@@ -2,6 +2,7 @@ require_relative './book'
 require_relative '../app'
 require_relative 'movie'
 require_relative './add_music'
+require_relative '../exit_app'
 
 # main entry point where the user can choise operations
 def display_menu(app)
@@ -15,8 +16,7 @@ def display_menu(app)
   when '2'
     adding(app)
   when '3'
-    app.save_data
-    exit 0
+    exit_app(app)
   else
     puts 'Invalid selection'
   end
@@ -40,7 +40,7 @@ def listing(app)
   when '5'
     display_menu(app)
   when '6'
-    exit 0
+    exit_app(app)
   else
     puts 'Invalid selection'
   end
@@ -69,7 +69,7 @@ def display_next_menu(app)
   when '7'
     display_menu(app)
   when '8'
-    exit 0
+    exit_app(app)
   else
     puts 'Invalid selection'
   end
@@ -93,7 +93,7 @@ def adding(app)
   when '5'
     display_menu(app)
   when '6'
-    exit 0
+    exit_app(app)
   end
 end
 
