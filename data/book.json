@@ -1,1 +1,2 @@
-[{"ref":"#<Book:0x0000025e32046f18>","value":{"id":289,"publish_date":"02/05/2000","archive":false,"publisher":"Alyssa","cover_state":"good","archived":true}},{"ref":"#<Book:0x0000025e32044308>","value":{"id":771,"publish_date":"2021/1/9","archive":false,"publisher":"Mal","cover_state":"good","archived":false}},{"ref":"#<Book:0x0000025e3203f330>","value":{"id":319,"publish_date":"2010/1/18","archive":false,"publisher":"Jay","cover_state":"","archived":true}}]
+[{"ref":"#<Book:0x000001a49dcdcfd8>","value":{"id":114,"publish_date":"02/05/2000","archive":false,"publisher":"Alyssa","cover_state":"good","archived":true}}]
+

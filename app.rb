@@ -7,14 +7,15 @@ require_relative '../Ruby-Capstone/class/label_methods'
 require 'json'
 
 class App
-  attr_accessor :book_list, :author_list, :music_album, :movies
+  attr_accessor :book_list, :author_list, :music_album, :movies_list, :sources
 
   def initialize
     @book_list = []
     @author_list = []
     @music_album = []
     @games = []
-    @movies = []
+    @movies_list = []
+    @sources = []
     @genres = []
     @label = []
   end
@@ -32,15 +33,15 @@ class App
   end
 
   def movie_create
-    @movie.add_movie
+    add_movie
   end
 
   def movie_display
-    @movie.list_all_movies
+    list_all_movies
   end
 
   def source_display
-    @movie.list_all_sources
+    list_all_sources
   end
 
   def music_display
@@ -87,7 +88,7 @@ class App
           read_music(ary)
         when 'game'
           read_game(ary)
-        when 'movie'
+        when 'movies'
           read_movies(ary)
         end
       else
