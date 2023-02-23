@@ -78,7 +78,7 @@ end
 def adding(app)
   puts "\nWelcome to our Catalog!"
   puts "\nPlease select a number for adding items"
-  puts " 1 - Add a book\n 2 - Add a music album\n 3 - Add a game\n 4 - Add a movie\n 5 - Back to main\n 6 - Exit App"
+  puts " 1 - Add a book\n 2 - Add a music album\n 3 - Add a game\n 4 - Add a movie\n 5 - Add a label\n 6 - Back to main\n 7 - Exit App"
   choice = gets.chomp
   case choice
   when '1'
@@ -90,8 +90,10 @@ def adding(app)
   when '4'
     app.movie_create
   when '5'
-    display_menu(app)
+    app.label_create
   when '6'
+    display_menu(app)
+  when '7'
     exit_app(app)
   end
 end

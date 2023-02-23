@@ -3,6 +3,7 @@ require_relative '../Ruby-Capstone/class/book_methods'
 require_relative '../Ruby-Capstone/class/display_menu'
 require_relative '../Ruby-Capstone/class/music_methods'
 require_relative '../Ruby-Capstone/file_reader'
+require_relative '../Ruby-Capstone/class/label_methods'
 require 'json'
 
 class App
@@ -15,6 +16,7 @@ class App
     @games = []
     @movies = []
     @genres = []
+    @label = []
   end
 
   def book_display
@@ -51,6 +53,14 @@ class App
 
   def genre_display
     list_all_genre
+  end
+
+  def lable_display
+    list_label
+  end
+
+  def label_create
+    create_label
   end
 
   def save_files
