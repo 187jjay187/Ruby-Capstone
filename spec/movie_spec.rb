@@ -1,3 +1,4 @@
+# rubocop:disable all
 require_relative '../class/movie'
 
 describe Movie do

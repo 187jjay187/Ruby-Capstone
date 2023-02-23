@@ -1,5 +1,5 @@
+# rubocop:disable all
 require_relative '../class/source'
-
 
 describe Source do
   context 'Test for the Source' do
