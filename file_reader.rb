@@ -22,9 +22,9 @@ def read_author(file)
   puts '*********************      AUTHORS     *********************'
   puts ''
   file.each do |el|
-    author_first = el['value']['first_name']
-    author_last = el['value']['last_name']
-    puts "Author First Name: #{author_first} Author Last Name: #{author_last}"
+    authors_first = el['value']['first_name']
+    authors_last = el['value']['last_name']
+    puts "Author First Name: #{authors_first} Author Last Name: #{authors_last}"
   end
 end
 
@@ -75,5 +75,20 @@ def read_label(file)
     label_title = el['value']['title']
     label_color = el['value']['color']
     puts "Label Title: #{label_title} Label Color: #{label_color}"
+  end
+end
+
+def read_games(file)
+  puts ''
+  puts '*********************   GAMES   *********************'
+  puts ''
+  file.each do |el|
+    game_id = el['value']['id']
+    game_archived = el['value']['archived']
+    game_multiplayer = el['value']['multiplayer']
+    game_last_played_at = el['value']['last_played_at']
+    game_publish_date = el['value']['publish_date']
+    puts "ID: #{game_id} Multiplayer: #{game_multiplayer} Last Played on: #{game_last_played_at} Published on: #{game_publish_date}  Archived: #{game_archived}" # rubocop:disable Layout/LineLength
+    add_game(game_multiplayer, game_last_played_at, game_publish_date)
   end
 end
