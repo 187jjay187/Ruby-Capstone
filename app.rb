@@ -23,8 +23,8 @@ class App
     list_books
   end
 
-    def author_display
-  list_authors
+  def author_display
+    list_authors
   end
 
   def game_display
