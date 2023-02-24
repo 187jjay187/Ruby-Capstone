@@ -9,7 +9,7 @@ class Source
   end
 
   def add_item(item)
-    @items.push(item)
     item.source = self
+    @items << item
   end
 end

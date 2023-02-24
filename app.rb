@@ -93,7 +93,7 @@ class App
           read_music(ary)
         when 'games'
           read_games(ary)
-        when 'movies_list'
+        when 'movies'
           read_movies(ary)
         end
       else
