@@ -2,7 +2,7 @@ require_relative 'items'
 require_relative 'music'
 require_relative 'genre'
 
-def creat_album
+def create_album
   puts 'When did you publish your music album?[mm/dd/yyyy]'
   public_date = gets.chomp
   puts 'Can you tell me your music genre?[eg : pop,rock]'
