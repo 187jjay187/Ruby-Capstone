@@ -1,24 +1,8 @@
 require_relative '../class/game'
 
-describe Game do
-  context 'Testing for the game class ' do
-    it 'Should test the attribute of the game class' do
-      game = Game.new(true, '2001')
-      expect(game.multiplayer).to eq true
-      expect(game.publish_date).to eq '2001'
-    end
-
-    it 'Should test the attribute of the game class' do
-      game = Game.new(false, '2001')
-      expect(game.multiplayer).to eq false
-      expect(game.public_date).to eq '2001'
-    end
-  end
-end
-
 describe 'Unit Tests for Game Class' do
   before :each do
-    @game = Game.new(true, '2001')
+    @game = Game.new('Y', '1991/05/21', '2005/06/25')
   end
 
   context 'initialize object' do
@@ -35,15 +19,21 @@ describe 'Unit Tests for Game Class' do
     end
   end
 
-  context 'multiplayer' do
-    it 'should be true' do
-      expect(@game.multiplayer).to eql true
+  context 'Multiplayer Game' do
+    it 'should be "Y"' do
+      expect(@game.multiplayer).to eql 'Y'
     end
   end
 
-  context 'game publish date' do
-    it 'should be 2001' do
-      expect(@game.public_date).to eql '2001'
+  context 'when was game last played' do
+    it 'should be "1991/05/21"' do
+      expect(@game.last_played_at).to eql '1991/05/21'
+    end
+
+    context 'when was game published' do
+      it 'should be "2005/06/25"' do
+        expect(@game.publish_date).to eql '2005/06/25'
+      end
     end
   end
 end
