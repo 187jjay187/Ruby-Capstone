@@ -3,6 +3,7 @@ require_relative '../Ruby-Capstone/class/book_methods'
 require_relative '../Ruby-Capstone/class/display_menu'
 require_relative '../Ruby-Capstone/class/music_methods'
 require_relative '../Ruby-Capstone/class/game_methods'
+require_relative '../Ruby-Capstone/class/author_list'
 require_relative '../Ruby-Capstone/file_reader'
 require 'json'
 
@@ -13,7 +14,7 @@ class App
     @book_list = []
     @author_list = []
     @music_album = []
-    @games = GamePlay.new
+    @games = []
     @movies = []
     @genres = []
   end
@@ -22,16 +23,20 @@ class App
     list_books
   end
 
-  def author_display
-    @authors.list_authors
+    def author_display
+  list_authors
   end
 
   def game_display
-    @games.list_games
+    list_games
   end
 
   def game_create
-    @games.add_game
+    create_game
+  end
+
+  def author_create
+    create_author
   end
 
   def book_create
@@ -85,8 +90,8 @@ class App
           read_book(ary)
         when 'music_album'
           read_music(ary)
-        # when 'games'
-        #   read_games(ary)
+        when 'games'
+          read_games(ary)
         when 'movie'
           read_movies(ary)
         end
@@ -102,7 +107,7 @@ class App
       if File.exist?("./data/#{file_name}.json") && File.read("./data/#{file_name}.json") != ''
         ary = JSON.parse(File.read("./data/#{file_name}.json"))
         case file_name
-        when 'authors'
+        when 'author'
           read_author(ary)
         when 'label'
           read_label(ary)
