@@ -14,6 +14,6 @@ class Game < Item
   private
 
   def can_be_archived?
-    super && !authors.any? { |author| author.has_item?(self) }
+    super && authors.none? { |author| author.has_item?(self) }
   end
 end
