@@ -3,42 +3,37 @@ require_relative 'author'
 require_relative 'items'
 # require_relative 'data_store'
 
-class GamePlay
-  attr_accessor :games, :authors
-
-  def initialize
-    # @data_store = DataStore.new
-    @games = []
-    @authors = []
-  end
-
   def list_games
     if @games.empty?
       puts 'No game available!'
     else
       @games.each_with_index do |game, index|
-        author_names = game.authors.map { |author_id| find_author_by_id(author_id).full_name }.join(', ')
-        puts "#{index + 1} Multiplayer: #{game.multiplayer}, Last played at: #{game.last_played_at}, Authors: #{author_names}" # rubocop:disable Layout/LineLength
+        author_names = @games.map{puts "#{index + 1} Multiplayer: #{game.multiplayer}, Last played at: #{game.last_played_at}, Authors: #{author_names}"}  # rubocop:disable Layout/LineLength
       end
     end
   end
 
   def list_authors
-    if @authors.empty?
+    if @author_list.empty?
       puts 'No author available!'
     else
-      authors.each_with_index { |author, index| puts "#{index + 1}: #{author.full_name}" }
+      author_list.each_with_index { |author, index| puts "#{index + 1}: #{author.full_name}" }
     end
   end
 
-  def add_game
+def add_game (multiplayer, last_played_at, publish_date)
+ new_game = Game.new(multiplayer, last_played_at, publish_date)
+ @games << new_game
+end
+
+  def create_game
     input = author_user_input
     author = Author.new(input[0], input[1])
-    authors << author
+    @author_list << author
     game_input = game_user_input
     puts 'When did you publish your game?:'
     publish_date = gets.chomp
-    game = Game.new(game_input[0], game_input[1], publish_date, author)
+    game = Game.new(game_input[0], game_input[1], publish_date)
     games << game
     puts 'you added the game successfully!'
   end
@@ -78,4 +73,3 @@ class GamePlay
     end
     [first_name, last_name]
   end
-end
