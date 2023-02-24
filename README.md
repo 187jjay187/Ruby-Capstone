@@ -16,7 +16,7 @@
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
-  - [🚀 Live Demo ](#-live-demo-)
+  - [🚀 Video Recording ](#-Vieo-recording-)
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
     - [Run tests](#run-tests)
@@ -84,10 +84,10 @@
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-## 🚀 Live Demo <a name="live-demo"></a>
+## 🚀 Video Recording <a name="Video-Recording"></a>
 
 
-- [Live Demo Link](https://yourdeployedapplicationlink.com)
+- [Live Demo Link](https://drive.google.com/file/d/1t_GV0cE4_wiQ65YPaZOzJwFso0_qNSG4/view?usp=sharing.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -139,11 +139,11 @@ Run ruby main.rb or rspec
 - Twitter: [@twitterhandle](https://twitter.com/187jjay187)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/jerome-osman-137605a4)
 
-👤 Lukman Abdulkarim
+### 👤 Lukman Abdulkarim
 
-GitHub: @lukman155
-Twitter: @lukmanabdulka18
-LinkedIn: lukman-abdulkarim
+GitHub: [@githubhandle](https://github.com/lukman155)
+Twitter: [@twitterhandle](https://twitter.com/lukmanabdulka18)
+LinkedIn: [LinkedIn](https://linkedin.com/in/lukman-abdulkarim)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -186,76 +186,5 @@ Give a ⭐️ if you like this project!
 ## 📝 License <a name="license"></a>
 
 This project is [MIT](./LICENSE) licensed.
-
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>](https://github.com/187jjay187/Ruby-Capstone.git)](https://github.com/187jjay187/Ruby-Capstone.git)
-- Installing the packages by running bundle install
-- cd to spec directory
-Run ruby main.rb or rspec
-
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-## 👥 Authors <a name="authors"></a>
-
-### 👤 Maaloum Ely Cheikh
-
-- GitHub: [@githubhandle](https://github.com/maaloum)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-###  👤 Soe Sandar Win
-
-- GitHub: [@soesandarwin2201](https://github.com/soesandarwin2201)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/soe-sandar-win-softwareengineer/)
-
-### 👤 Jerome
-
-- GitHub: [@githubhandle](https://github.com/187jjay187)
-- Twitter: [@twitterhandle](https://twitter.com/187jjay187)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/jerome-osman-137605a4)
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-## 🔭 Future Features <a name="future-features"></a>
-
-
-- [ ] **[Add a book]**
-- [ ] **[Add a music album]**
-- [ ] **[Add a movie]**
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-## 🤝 Contributing <a name="contributing"></a>
-
-Contributions, issues, and feature requests are welcome!
-
-Feel free to check the [issues page](https://github.com/187jjay187/Ruby-Capstone/issues).
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-## ⭐️ Show your support <a name="support"></a>
-
-Give a ⭐️ if you like this project!
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-## 🙏 Acknowledgments <a name="acknowledgements"></a>
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-## 📝 License <a name="license"></a>
-
-This project is [MIT](./LICENSE) licensed.
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
