@@ -87,7 +87,7 @@
 ## 🚀 Video Recording <a name="Video-Recording"></a>
 
 
-- [Live Demo Link](https://drive.google.com/file/d/1t_GV0cE4_wiQ65YPaZOzJwFso0_qNSG4/view?usp=sharing.com)
+- [Video Recording](https://drive.google.com/file/d/1Sn-o4WUCfCJqNYk6stHLj0JSfbZyvuAu/view?usp=sharing)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -141,9 +141,9 @@ Run ruby main.rb or rspec
 
 ### 👤 Lukman Abdulkarim
 
-GitHub: [@githubhandle](https://github.com/lukman155)
-Twitter: [@twitterhandle](https://twitter.com/lukmanabdulka18)
-LinkedIn: [LinkedIn](https://linkedin.com/in/lukman-abdulkarim)
+- GitHub: [@githubhandle](https://github.com/lukman155)
+- Twitter: [@twitterhandle](https://twitter.com/lukmanabdulka18)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/lukman-abdulkarim)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
