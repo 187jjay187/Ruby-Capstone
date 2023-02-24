@@ -16,7 +16,7 @@
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
-  - [🚀 Live Demo ](#-live-demo-)
+  - [🚀 Video Recording ](#-Vieo-recording-)
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
     - [Run tests](#run-tests)
@@ -84,10 +84,10 @@
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-## 🚀 Live Demo <a name="live-demo"></a>
+## 🚀 Video Recording <a name="Video-Recording"></a>
 
 
-- [Live Demo Link](https://yourdeployedapplicationlink.com)
+- [Live Demo Link](https://drive.google.com/file/d/1t_GV0cE4_wiQ65YPaZOzJwFso0_qNSG4/view?usp=sharing.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
