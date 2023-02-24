@@ -13,7 +13,7 @@ class App
     @book_list = []
     @author_list = []
     @music_album = []
-    @games = Game.new
+    @games = GamePlay.new
     @movies = []
     @genres = []
   end
@@ -29,10 +29,10 @@ class App
   def game_display
     @games.list_games
   end
-  
+
   def game_create
     @games.add_game
-  end  
+  end
 
   def book_create
     create_book
