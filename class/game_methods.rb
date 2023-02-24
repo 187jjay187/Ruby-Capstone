@@ -17,7 +17,7 @@ class GamePlay
       puts 'No game available!'
     else
       @games.each_with_index do |game, index|
-        author_names = game.authors.map { |author_id| find_author_by_id(author_id).full_name }.join(", ")
+        author_names = game.authors.map { |author_id| find_author_by_id(author_id).full_name }.join(', ')
         puts "#{index + 1} Multiplayer: #{game.multiplayer}, Last played at: #{game.last_played_at}, Authors: #{author_names}" # rubocop:disable Layout/LineLength
       end
     end
@@ -34,13 +34,13 @@ class GamePlay
   def add_game
     input = author_user_input
     author = Author.new(input[0], input[1])
-    @authors << author
+    authors << author
     game_input = game_user_input
-    puts "When did you publish your game?:"
+    puts 'When did you publish your game?:'
     publish_date = gets.chomp
     game = Game.new(game_input[0], game_input[1], publish_date, author)
-    @games << game
-    puts "you added the game successfully!"
+    games << game
+    puts 'you added the game successfully!'
   end
 
   private
