@@ -8,15 +8,16 @@ require_relative '../Ruby-Capstone/file_reader'
 require 'json'
 
 class App
-  attr_accessor :book_list, :author_list, :music_album, :movies, :games, :genres
+  attr_accessor :book_list, :author_list, :music_album, :movies_list, :games, :genres, :sources
 
   def initialize
     @book_list = []
     @author_list = []
     @music_album = []
     @games = []
-    @movies = []
+    @movies_list = []
     @genres = []
+    @sources = []
   end
 
   def book_display
@@ -44,15 +45,15 @@ class App
   end
 
   def movie_create
-    @movies.add_movie
+    add_movie
   end
 
   def movie_display
-    @movies.list_all_movies
+    list_all_movies
   end
 
   def source_display
-    @movies.list_all_sources
+    list_all_sources
   end
 
   def music_display
@@ -92,7 +93,7 @@ class App
           read_music(ary)
         when 'games'
           read_games(ary)
-        when 'movie'
+        when 'movies'
           read_movies(ary)
         end
       else
